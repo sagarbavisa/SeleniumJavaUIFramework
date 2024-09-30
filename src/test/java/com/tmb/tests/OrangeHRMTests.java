@@ -1,9 +1,8 @@
 package com.tmb.tests;
 
+import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
-import com.tmb.driver.DriverManager;
-import com.tmb.pages.OrangeHRMHomePage;
 import com.tmb.pages.OrangeHRMLoginPage;
 
 public final class OrangeHRMTests extends BaseTest
@@ -14,10 +13,14 @@ private OrangeHRMTests()
 	
 }
 @Test
-public void loginLogoutTest() throws InterruptedException
+public void loginLogoutTest()
 {
 	OrangeHRMLoginPage hrmLoginPage = new OrangeHRMLoginPage();
-	OrangeHRMHomePage homePage = hrmLoginPage.inputUsername("Admin").inputPassword("admin123").clickLoginBtn();
-	homePage.clickProfileLink().cliclLogoutLink();
+	String loginpageTitle = hrmLoginPage.inputUsername("Admin").inputPassword("admin123").clickLoginBtn()
+			.clickProfileLink().clickLogoutLink().getTitle();
+	
+	Assertions.assertThat(loginpageTitle)
+	.isEqualTo("OrangeHRM");
+	
 }
 }

@@ -8,7 +8,9 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Properties;
 
-public class ReadPropertyFile 
+import com.tmb.enums.ConfigProperties;
+
+public class PropertUtils 
 {
 	private static Map<String, String> CONFIGMAP = new HashMap<String, String>();
 	private static Properties prop = new Properties();
@@ -29,12 +31,12 @@ public class ReadPropertyFile
 			e.printStackTrace();
 		}
 	}
-public static String getValue(String key) throws Exception
+public static String getValue(ConfigProperties key) throws Exception
 {
-	if(Objects.isNull(CONFIGMAP.get(key)) || Objects.isNull(key))
+	if(Objects.isNull(CONFIGMAP.get(key.name().toLowerCase())) || Objects.isNull(key))
 	{
 	throw new Exception("Property name "+key+" is not found. Please check");	
 	}
-	return CONFIGMAP.get(key);
+	return CONFIGMAP.get(key.name().toLowerCase());
 	}
 }

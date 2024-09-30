@@ -1,12 +1,10 @@
 package com.tmb.pages;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 
-import com.tmb.driver.DriverManager;
+import com.tmb.enums.WaitStrategy;
 
-public final class OrangeHRMLoginPage {
+public final class OrangeHRMLoginPage extends BasePage {
 
 	private final By username = By.cssSelector("input[name='username']");
 	private final By password = By.xpath("//*[@type='password']");
@@ -15,17 +13,17 @@ public final class OrangeHRMLoginPage {
     
 	public OrangeHRMLoginPage inputUsername(String usernameText)
 	{
-		DriverManager.getDriver().findElement(username).sendKeys(usernameText);
+		sendText(username,usernameText,WaitStrategy.VISIBLE);
 		return this;
 	}
 	public OrangeHRMLoginPage inputPassword(String passwordText)
 	{
-		DriverManager.getDriver().findElement(password).sendKeys(passwordText);
+		sendText(password, passwordText,WaitStrategy.VISIBLE);
 		return this;
 	}
 	public OrangeHRMHomePage clickLoginBtn()
 	{
-		DriverManager.getDriver().findElement(loginBtn).click();
+		click(loginBtn,WaitStrategy.VISIBLE);
 		return new OrangeHRMHomePage();
 	}
 }

@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="1" name="Test">
     <classes>
-      <class name="com.tmb.tests.OrangeHRMTests"/>
+      <class name="com.tmb.tests.DataProviderTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
