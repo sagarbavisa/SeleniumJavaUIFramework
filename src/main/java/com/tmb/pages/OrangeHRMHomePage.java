@@ -2,20 +2,23 @@ package com.tmb.pages;
 
 import org.openqa.selenium.By;
 
-import com.tmb.driver.DriverManager;
+import com.tmb.enums.WaitStrategy;
 
-public final class OrangeHRMHomePage {
+public final class OrangeHRMHomePage extends BasePage{
 private final By profileLink = By.className("oxd-userdropdown-name");
 private final By logoutLink = By.xpath("//*[text()='Logout']");
-public OrangeHRMHomePage clickProfileLink() throws InterruptedException
+public OrangeHRMHomePage clickProfileLink()
 {
-	Thread.sleep(3000);
-	DriverManager.getDriver().findElement(profileLink).click();
+	click(profileLink,WaitStrategy.CLICKABLE);
 	return this;
 }
-public OrangeHRMHomePage cliclLogoutLink()
+public OrangeHRMHomePage clickLogoutLink()
 {
-	DriverManager.getDriver().findElement(logoutLink).click();
+	click(logoutLink,WaitStrategy.CLICKABLE);
 	return this;
+}
+public String getTitle()
+{
+	return getPageTitle();
 }
 }

@@ -1,12 +1,12 @@
 package com.tmb.driver;
 
-import java.time.Duration;
 import java.util.Objects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.tmb.utils.ReadPropertyFile;
+import com.tmb.enums.ConfigProperties;
+import com.tmb.utils.PropertUtils;
 
 public class Driver {
 
@@ -20,8 +20,7 @@ public class Driver {
 	{
 		if(Objects.isNull(DriverManager.getDriver())) {
 			DriverManager.setDriver(new ChromeDriver());
-			DriverManager.getDriver().get(ReadPropertyFile.getValue("url"));
-			Thread.sleep(3000);
+			DriverManager.getDriver().get(PropertUtils.getValue(ConfigProperties.URL));
 		}
 	}
 	public static void quitDriver()
