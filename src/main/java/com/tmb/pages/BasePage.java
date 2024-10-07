@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import com.tmb.driver.DriverManager;
 import com.tmb.enums.WaitStrategy;
 import com.tmb.factories.ExplicitWaitFactory;
+import com.tmb.reports.ExtentLogger;
+import com.tmb.reports.ExtentManager;
 
 public class BasePage 
 {
@@ -12,15 +14,17 @@ protected BasePage()
 {
 	
 }
-protected void click(By by,WaitStrategy waitStrategy) {
+protected void click(By by,WaitStrategy waitStrategy,String elementName) {
 	
 	WebElement element = ExplicitWaitFactory.PerformExplicitWait(WaitStrategy.CLICKABLE, by);
 			element.click();
+		ExtentLogger.pass(elementName + " is clicked");
 }
-protected void sendText(By by,String text,WaitStrategy waitStrategy)
+protected void sendText(By by,String value,WaitStrategy waitStrategy,String elementName)
 {
 	WebElement element = ExplicitWaitFactory.PerformExplicitWait(WaitStrategy.VISIBLE, by);	
-	element.sendKeys(text);
+	element.sendKeys(value);
+	ExtentLogger.pass(value + " is entered successfully in "+elementName);
 }
 protected String getPageTitle()
 {
