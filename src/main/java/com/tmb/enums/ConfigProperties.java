@@ -2,5 +2,9 @@ package com.tmb.enums;
 
 public enum ConfigProperties {
 		URL,
-		BROWSER
+		BROWSER,
+		OVERRIDEREPORTS,
+		PASSEDSTEPSSCREENSHOT,
+		FAILEDSTEPSSCREENSHOT,
+		SKIPPEDSTEPSSCREENSHOT
 }

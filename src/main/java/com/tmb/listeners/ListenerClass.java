@@ -1,27 +1,34 @@
 package com.tmb.listeners;
 
-import java.io.IOException;
+import java.util.Arrays;
+import java.util.Map;
 
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.xml.XmlTest;
 
 import com.tmb.reports.ExtentLogger;
 import com.tmb.reports.ExtentReport;
-
 public final  class ListenerClass  implements ISuiteListener,ITestListener{
 
 	public void onTestStart(ITestResult result) {
-		ExtentReport.createTest(result.getMethod().getMethodName());
+		ExtentReport.createTest(result.getMethod().getDescription());
 	}
 	public void onTestSuccess(ITestResult result) {
 		ExtentLogger.pass(result.getMethod().getMethodName() + " is passed");
 	}
 
 	public void onTestFailure(ITestResult result) {
-		ExtentLogger.pass(result.getMethod().getMethodName() + " is failed");
+		try {
+			ExtentLogger.fail(result.getMethod().getMethodName() + " is failed",true);
+			ExtentLogger.fail(result.getThrowable().toString());
+			ExtentLogger.fail(Arrays.toString(result.getThrowable().getStackTrace()));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void onTestSkipped(ITestResult result) {
@@ -41,15 +48,15 @@ public final  class ListenerClass  implements ISuiteListener,ITestListener{
 	}
 
 	public void onStart(ISuite suite) {
-		ExtentReport.initReports();
+		try {
+			ExtentReport.initReports();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void onFinish(ISuite suite) {
-		try {
-			ExtentReport.flushReports();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		ExtentReport.flushReports();
 	}
 
 }

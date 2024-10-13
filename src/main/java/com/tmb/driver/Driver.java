@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.tmb.enums.ConfigProperties;
-import com.tmb.utils.PropertUtils;
+import com.tmb.utils.PropertyUtil;
 
 public class Driver {
 
@@ -20,7 +20,7 @@ public class Driver {
 	{
 		if(Objects.isNull(DriverManager.getDriver())) {
 			DriverManager.setDriver(new ChromeDriver());
-			DriverManager.getDriver().get(PropertUtils.getValue(ConfigProperties.URL));
+			DriverManager.getDriver().get(PropertyUtil.getValue(ConfigProperties.URL));
 		}
 	}
 	public static void quitDriver()

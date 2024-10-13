@@ -8,15 +8,16 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Properties;
 
+import com.tmb.constants.FrameworkConstants;
 import com.tmb.enums.ConfigProperties;
 
-public class PropertUtils 
+public class PropertyUtil 
 {
 	private static Map<String, String> CONFIGMAP = new HashMap<String, String>();
 	private static Properties prop = new Properties();
 	static {
 		try {
-			FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\config\\config.properties");
+			FileInputStream fp = new FileInputStream(FrameworkConstants.getConfigPropertyFilePath());
 			prop.load(fp);
 			for(Map.Entry<Object, Object> propMap : prop.entrySet())
 			{

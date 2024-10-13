@@ -18,13 +18,21 @@ protected void click(By by,WaitStrategy waitStrategy,String elementName) {
 	
 	WebElement element = ExplicitWaitFactory.PerformExplicitWait(WaitStrategy.CLICKABLE, by);
 			element.click();
-		ExtentLogger.pass(elementName + " is clicked");
+		try {
+			ExtentLogger.pass(elementName + " is clicked",true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 }
 protected void sendText(By by,String value,WaitStrategy waitStrategy,String elementName)
 {
 	WebElement element = ExplicitWaitFactory.PerformExplicitWait(WaitStrategy.VISIBLE, by);	
 	element.sendKeys(value);
-	ExtentLogger.pass(value + " is entered successfully in "+elementName);
+	try {
+		ExtentLogger.pass(value + " is entered successfully in "+elementName,true);
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
 }
 protected String getPageTitle()
 {
