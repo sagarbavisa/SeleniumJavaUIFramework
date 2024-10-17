@@ -1,6 +1,6 @@
 package com.tmb.tests;
 
-import java.io.IOException;
+import java.util.Map;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -20,9 +20,11 @@ public class BaseTest
 	}
 	
 	@BeforeMethod
-	protected void setUp() throws Exception
+	protected void setUp(Object[] data) throws Exception
 	{
-		Driver.initdriver();
+		@SuppressWarnings("unchecked")
+		Map<String,String> map = (Map<String,String>)data[0];
+		Driver.initdriver(map.get("browser"));
 	}
 	@AfterMethod
 	protected void tearDown()

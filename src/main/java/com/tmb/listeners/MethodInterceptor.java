@@ -8,13 +8,14 @@ import org.testng.IMethodInstance;
 import org.testng.IMethodInterceptor;
 import org.testng.ITestContext;
 
+import com.tmb.constants.FrameworkConstants;
 import com.tmb.utils.ExcelUtils;
 
 public final class MethodInterceptor implements IMethodInterceptor{
 
 	public List<IMethodInstance> intercept(List<IMethodInstance> methods, ITestContext context) {
 		
-	List<Map<String, String>> list= ExcelUtils.getTestDetails("RUNNER");
+	List<Map<String, String>> list= ExcelUtils.getTestDetails(FrameworkConstants.getRunmanagersheet());
 	List<IMethodInstance> result = new ArrayList<>();
 	for(int i=0;i<methods.size();i++)
 	{

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 13 11:43:50 IST 2024</td>
+<td>Started on:</td><td>Fri Oct 18 00:33:27 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43263 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8906 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,35 +75,61 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tmb.tests.OrangeHRMTests.newTest()'><b>newTest</b><br>Test class: com.tmb.tests.OrangeHRMTests<br>Test method: To check whether test is executed<br>Parameters: {fname=, password=admin12, testname=newTest, execute=yes, username=Admin}</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.className: oxd-userdropdown-name (tried for 10 second(s) with 500 milliseconds interval)
+<td title='com.tmb.tests.AmazonDemoTest.amazonTest()'><b>amazonTest</b><br>Test class: com.tmb.tests.AmazonDemoTest<br>Test method: To check whether amazon  test is executed<br>Parameters: {fname=, password=, browser=chrome, testname=amazonTest, execute=yes, menutext=Laptops, username=}</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/gp/browse.html?node=1375424031&amp;amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15&quot; class=&quot;hmenu-item&quot;&gt;...&lt;/a&gt; is not clickable at point (174, 613). Other element would receive the click: &lt;a href=&quot;/gp/browse.html?node=976451031&amp;amp;ref_=nav_em_sbc_mobcomp_software_0_2_8_12&quot; class=&quot;hmenu-item&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=129.0.6668.101)
 Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56134/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0b12affe88699e0352a6430ff3d377d2
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.tmb.factories.ExplicitWaitFactory.PerformExplicitWait(ExplicitWaitFactory.java:26)
-	at com.tmb.pages.BasePage.click(BasePage.java:19)
-	at com.tmb.pages.OrangeHRMHomePage.clickProfileLink(OrangeHRMHomePage.java:15)
-	at com.tmb.tests.OrangeHRMTests.newTest(OrangeHRMTests.java:37)
+Command: [baa507b3a92a69d06ab93d8e942b7906, clickElement {id=f.08FA03C274E66B2D604B4E8AA7F77512.d.B4D2FE62878912E191A479535C3A3C87.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50318/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (baa507b3a92a69d06ab93d8e942b7906)] -&gt; xpath: //a[text()=&apos;Laptops&apos;]]
+Session ID: baa507b3a92a69d06ab93d8e942b7906
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.tmb.pages.BasePage.click(BasePage.java:20)
+	at com.tmb.pages.AmazonHamburgerMenuPage.clickSubMenuItem(AmazonHamburgerMenuPage.java:13)
+	at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1764461047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1764461047'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.className: oxd-userdropdown-name (tried for 10 second(s) with 500 milliseconds interval)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1789155459", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1789155459'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/gp/browse.html?node=1375424031&amp;amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15&quot; class=&quot;hmenu-item&quot;&gt;...&lt;/a&gt; is not clickable at point (174, 613). Other element would receive the click: &lt;a href=&quot;/gp/browse.html?node=976451031&amp;amp;ref_=nav_em_sbc_mobcomp_software_0_2_8_12&quot; class=&quot;hmenu-item&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=129.0.6668.101)
 Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56134/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0b12affe88699e0352a6430ff3d377d2
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.tmb.factories.ExplicitWaitFactory.PerformExplicitWait(ExplicitWaitFactory.java:26)
-	at com.tmb.pages.BasePage.click(BasePage.java:19)
-	at com.tmb.pages.OrangeHRMHomePage.clickProfileLink(OrangeHRMHomePage.java:15)
-	at com.tmb.tests.OrangeHRMTests.newTest(OrangeHRMTests.java:37)
+Command: [baa507b3a92a69d06ab93d8e942b7906, clickElement {id=f.08FA03C274E66B2D604B4E8AA7F77512.d.B4D2FE62878912E191A479535C3A3C87.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50318/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (baa507b3a92a69d06ab93d8e942b7906)] -&gt; xpath: //a[text()=&apos;Laptops&apos;]]
+Session ID: baa507b3a92a69d06ab93d8e942b7906
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.tmb.pages.BasePage.click(BasePage.java:20)
+	at com.tmb.pages.AmazonHamburgerMenuPage.clickSubMenuItem(AmazonHamburgerMenuPage.java:13)
+	at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:17)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,33 +137,17 @@ Session ID: 0b12affe88699e0352a6430ff3d377d2
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>11</td>
-<td>com.tmb.tests.OrangeHRMTests@57250572</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.tmb.tests.OrangeHRMTests.loginLogoutTest()'><b>loginLogoutTest</b><br>Test class: com.tmb.tests.OrangeHRMTests<br>Test method: To check whether user can successfully login and logout<br>Parameters: {fname=sagar, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin}</td>
-<td></td>
-<td>5</td>
-<td>com.tmb.tests.OrangeHRMTests@57250572</td></tr>
-<tr>
-<td title='com.tmb.tests.OrangeHRMTests.loginLogoutTest()'><b>loginLogoutTest</b><br>Test class: com.tmb.tests.OrangeHRMTests<br>Test method: To check whether user can successfully login and logout<br>Parameters: {fname=subscribe, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin}</td>
-<td></td>
-<td>5</td>
-<td>com.tmb.tests.OrangeHRMTests@57250572</td></tr>
+<td>2</td>
+<td>com.tmb.tests.AmazonDemoTest@610f7aa</td></tr>
 </table><p>
 </body>
 </html>

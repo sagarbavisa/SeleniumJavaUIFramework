@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,29 +102,10 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tmb.tests.OrangeHRMTests" class="method navigator-link" hash-for-method="newTest({fname=, password=admin12, testname=newTest, execute=yes, username=Admin})">newTest({fname=, password=admin12, testname=newTest, execute=yes, username=Admin})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.tmb.tests.AmazonDemoTest" class="method navigator-link" hash-for-method="amazonTest({fname=, password=, browser=chrome, testname=amazonTest, execute=yes, menutext=Laptops, username=})">amazonTest({fname=, password=, browser=chrome, testname=amazonTest, execute=yes, menutext=Laptops, username=})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tmb.tests.OrangeHRMTests" class="method navigator-link" hash-for-method="loginLogoutTest({fname=sagar, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin})">loginLogoutTest({fname=sagar, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tmb.tests.OrangeHRMTests" class="method navigator-link" hash-for-method="loginLogoutTest({fname=subscribe, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin})">loginLogoutTest({fname=subscribe, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -139,66 +120,50 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.tmb.tests.OrangeHRMTests</span>
+              <span class="class-name">com.tmb.tests.AmazonDemoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="newTest({fname=, password=admin12, testname=newTest, execute=yes, username=Admin})">
-                  </a> <!-- newTest({fname=, password=admin12, testname=newTest, execute=yes, username=Admin}) -->
-                  <span class="method-name">newTest</span>
-                  <span class="parameters">({fname=, password=admin12, testname=newTest, execute=yes, username=Admin})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.className: oxd-userdropdown-name (tried for 10 second(s) with 500 milliseconds interval)
+                  <a name="amazonTest({fname=, password=, browser=chrome, testname=amazonTest, execute=yes, menutext=Laptops, username=})">
+                  </a> <!-- amazonTest({fname=, password=, browser=chrome, testname=amazonTest, execute=yes, menutext=Laptops, username=}) -->
+                  <span class="method-name">amazonTest</span>
+                  <span class="parameters">({fname=, password=, browser=chrome, testname=amazonTest, execute=yes, menutext=Laptops, username=})</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/gp/browse.html?node=1375424031&amp;amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15&quot; class=&quot;hmenu-item&quot;&gt;...&lt;/a&gt; is not clickable at point (174, 613). Other element would receive the click: &lt;a href=&quot;/gp/browse.html?node=976451031&amp;amp;ref_=nav_em_sbc_mobcomp_software_0_2_8_12&quot; class=&quot;hmenu-item&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=129.0.6668.101)
 Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56134/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0b12affe88699e0352a6430ff3d377d2
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.tmb.factories.ExplicitWaitFactory.PerformExplicitWait(ExplicitWaitFactory.java:26)
-	at com.tmb.pages.BasePage.click(BasePage.java:19)
-	at com.tmb.pages.OrangeHRMHomePage.clickProfileLink(OrangeHRMHomePage.java:15)
-	at com.tmb.tests.OrangeHRMTests.newTest(OrangeHRMTests.java:37)
+Command: [baa507b3a92a69d06ab93d8e942b7906, clickElement {id=f.08FA03C274E66B2D604B4E8AA7F77512.d.B4D2FE62878912E191A479535C3A3C87.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50318/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (baa507b3a92a69d06ab93d8e942b7906)] -&gt; xpath: //a[text()=&apos;Laptops&apos;]]
+Session ID: baa507b3a92a69d06ab93d8e942b7906
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.tmb.pages.BasePage.click(BasePage.java:20)
+	at com.tmb.pages.AmazonHamburgerMenuPage.clickSubMenuItem(AmazonHamburgerMenuPage.java:13)
+	at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 10 stack frames
+... Removed 14 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(To check whether test is executed)                  </em>
+(To check whether amazon  test is executed)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.tmb.tests.OrangeHRMTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginLogoutTest({fname=sagar, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin})">
-                  </a> <!-- loginLogoutTest({fname=sagar, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin}) -->
-                  <span class="method-name">loginLogoutTest</span>
-                  <span class="parameters">({fname=sagar, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin})</span>
-                  <em>
-(To check whether user can successfully login and logout)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginLogoutTest({fname=subscribe, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin})">
-                  </a> <!-- loginLogoutTest({fname=subscribe, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin}) -->
-                  <span class="method-name">loginLogoutTest</span>
-                  <span class="parameters">({fname=subscribe, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin})</span>
-                  <em>
-(To check whether user can successfully login and logout)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -212,10 +177,12 @@ Session ID: 0b12affe88699e0352a6430ff3d377d2
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.tmb.listeners.ListenerClass&quot;/&gt;
     &lt;listener class-name=&quot;com.tmb.listeners.MethodInterceptor&quot;/&gt;
+    &lt;listener class-name=&quot;com.tmb.listeners.AnnotationTransformer&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.tmb.tests.OrangeHRMTests&quot;/&gt;
+      &lt;class name=&quot;com.tmb.tests.AmazonDemoTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -229,7 +196,7 @@ Session ID: 0b12affe88699e0352a6430ff3d377d2
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -255,24 +222,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'newTest')
-data.setCell(0, 2, 'com.tmb.tests.OrangeHRMTests')
-data.setCell(0, 3, 11050);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginLogoutTest')
-data.setCell(1, 2, 'com.tmb.tests.OrangeHRMTests')
-data.setCell(1, 3, 5459);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginLogoutTest')
-data.setCell(2, 2, 'com.tmb.tests.OrangeHRMTests')
-data.setCell(2, 3, 5013);
+data.setCell(0, 1, 'amazonTest')
+data.setCell(0, 2, 'com.tmb.tests.AmazonDemoTest')
+data.setCell(0, 3, 2349);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -298,44 +257,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.tmb.tests.OrangeHRMTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.tmb.tests.AmazonDemoTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">setUp([{fname=, password=, browser=chrome, testname=amazonTest, execute=yes, menutext=Laptops, username=}])</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginLogoutTest({fname=sagar, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin})</span>
-                <span class="method-start">7055 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">12071 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">12445 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginLogoutTest({fname=subscribe, password=admin123, testname=loginLogoutTest, execute=yes, username=Admin})</span>
-                <span class="method-start">17989 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">23449 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">23743 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">newTest({fname=, password=admin12, testname=newTest, execute=yes, username=Admin})</span>
-                <span class="method-start">29197 ms</span>
+                <span class="method-name">amazonTest({fname=, password=, browser=chrome, testname=amazonTest, execute=yes, menutext=Laptops, username=})</span>
+                <span class="method-start">4959 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40394 ms</span>
+                <span class="method-start">7559 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

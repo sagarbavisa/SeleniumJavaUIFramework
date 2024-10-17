@@ -25,7 +25,6 @@ public final  class ListenerClass  implements ISuiteListener,ITestListener{
 		try {
 			ExtentLogger.fail(result.getMethod().getMethodName() + " is failed",true);
 			ExtentLogger.fail(result.getThrowable().toString());
-			ExtentLogger.fail(Arrays.toString(result.getThrowable().getStackTrace()));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
