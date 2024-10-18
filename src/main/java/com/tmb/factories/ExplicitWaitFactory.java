@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.tmb.constants.FrameworkConstants;
@@ -31,6 +32,14 @@ public class ExplicitWaitFactory {
 		}
 		else if (waitStrategy == WaitStrategy.NONE) {
 			element = DriverManager.getDriver().findElement(by);
+		}
+		else if(waitStrategy == WaitStrategy.FLUENT_WAIT)
+		{
+		element =	new FluentWait<>(DriverManager.getDriver())
+            .withTimeout(Duration.ofSeconds(FrameworkConstants.getExplicitWait()))
+            .pollingEvery(Duration.ofSeconds(1))
+            .ignoring(Exception.class)
+            .until(driver->DriverManager.getDriver().findElement(by));
 		}
 		return element;
 	}

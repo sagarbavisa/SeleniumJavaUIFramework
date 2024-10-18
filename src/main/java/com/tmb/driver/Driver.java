@@ -31,6 +31,7 @@ public class Driver {
 				DriverManager.setDriver(new FirefoxDriver());
 			}
 			DriverManager.getDriver().get(PropertyUtil.getValue(ConfigProperties.URL));
+			DriverManager.getDriver().manage().window().maximize();
 		}
 	}
 	public static void quitDriver()

@@ -1,6 +1,8 @@
 package com.tmb.pages;
 
+
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import com.tmb.enums.WaitStrategy;
 import com.tmb.utils.DynamicXPathUtils;
@@ -10,7 +12,8 @@ public final class AmazonHamburgerMenuPage extends BasePage{
 private String linkSubMenu = "//a[text()='%s']";
 public AmazonLaptopPage clickSubMenuItem(String menuText)
 {
-	click(By.xpath(DynamicXPathUtils.getXpath(linkSubMenu,menuText)),WaitStrategy.CLICKABLE,menuText);
+
+	click(By.xpath(DynamicXPathUtils.getXpath(linkSubMenu,menuText)),WaitStrategy.VISIBLE,menuText);
 	if(menuText.equalsIgnoreCase("Laptops"))
 	{
 		return new AmazonLaptopPage();
@@ -19,7 +22,6 @@ public AmazonLaptopPage clickSubMenuItem(String menuText)
 }
 public AmazonHamburgerMenuPage clickComputers()
 {
-	
 	click(By.xpath(linkComputers),WaitStrategy.VISIBLE,"Mobiles,Computers");
 	return this;
 	

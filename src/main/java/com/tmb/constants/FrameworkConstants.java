@@ -6,7 +6,7 @@ import com.tmb.enums.ConfigProperties;
 import com.tmb.utils.PropertyUtil;
 
 public final class FrameworkConstants {
-	private static final int EXPLICIT_TIME = 10;
+	private static final int EXPLICIT_TIME = 15;
 	private static final String RESOURCESPATH = System.getProperty("user.dir")+"/src/test/resources";
 	private static final String CONFIGFILEPATH = RESOURCESPATH+"/config/config.properties";
 	private static final String EXTENTREPORTFOLDERPATH = System.getProperty("user.dir")+"extent-test-output/";

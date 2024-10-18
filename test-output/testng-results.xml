@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-17T19:03:27Z" name="Suite" finished-at="2024-10-17T19:03:36Z" duration-ms="8906">
+  <suite started-at="2024-10-18T18:13:05Z" name="Suite" finished-at="2024-10-18T18:13:16Z" duration-ms="11517">
     <groups>
     </groups>
-    <test started-at="2024-10-17T19:03:27Z" name="Test" finished-at="2024-10-17T19:03:36Z" duration-ms="8906">
+    <test started-at="2024-10-18T18:13:05Z" name="Test" finished-at="2024-10-18T18:13:16Z" duration-ms="11517">
       <class name="com.tmb.tests.AmazonDemoTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AmazonDemoTest@610f7aa]" started-at="2024-10-17T19:03:28Z" name="setUp" finished-at="2024-10-17T19:03:33Z" duration-ms="4959" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AmazonDemoTest@5609159b]" started-at="2024-10-18T18:13:06Z" name="setUp" finished-at="2024-10-18T18:13:13Z" duration-ms="6469" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@359b650b]]>
+                <![CDATA[[Ljava.lang.Object;@2116b68b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="amazonTest(java.util.Map)[pri:0, instance:com.tmb.tests.AmazonDemoTest@610f7aa]" started-at="2024-10-17T19:03:33Z" name="amazonTest" description="To check whether amazon  test is executed" finished-at="2024-10-17T19:03:35Z" duration-ms="2349" status="FAIL">
+        <test-method signature="amazonTest(java.util.Map)[pri:0, instance:com.tmb.tests.AmazonDemoTest@5609159b]" started-at="2024-10-18T18:13:13Z" name="amazonTest" description="To check whether amazon  test is executed" finished-at="2024-10-18T18:13:16Z" duration-ms="2893" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -28,26 +28,26 @@
           </params>
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <a href="/gp/browse.html?node=1375424031&amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15" class="hmenu-item">...</a> is not clickable at point (174, 613). Other element would receive the click: <a href="/gp/browse.html?node=976451031&amp;ref_=nav_em_sbc_mobcomp_software_0_2_8_12" class="hmenu-item">...</a>
+              <![CDATA[element click intercepted: Element <a href="/gp/browse.html?node=1375424031&amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15" class="hmenu-item">...</a> is not clickable at point (174, 640). Other element would receive the click: <ul class="hmenu hmenu-visible hmenu-translateX" data-menu-id="8" data-parent-menu-id="1">...</ul>
   (Session info: chrome=129.0.6668.101)
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [baa507b3a92a69d06ab93d8e942b7906, clickElement {id=f.08FA03C274E66B2D604B4E8AA7F77512.d.B4D2FE62878912E191A479535C3A3C87.e.48}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50318/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (baa507b3a92a69d06ab93d8e942b7906)] -> xpath: //a[text()='Laptops']]
-Session ID: baa507b3a92a69d06ab93d8e942b7906]]>
+Command: [7163901a8c9b1a60fb1d9bb76c0ad78d, clickElement {id=f.EA1FBC3F7BF7D13DD88C6F76515F10B9.d.17E2C89762AB2389C675AB665D898E13.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57129}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57129/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7163901a8c9b1a60fb1d9bb76c0ad78d)] -> xpath: //a[text()='Laptops']]
+Session ID: 7163901a8c9b1a60fb1d9bb76c0ad78d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/gp/browse.html?node=1375424031&amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15" class="hmenu-item">...</a> is not clickable at point (174, 613). Other element would receive the click: <a href="/gp/browse.html?node=976451031&amp;ref_=nav_em_sbc_mobcomp_software_0_2_8_12" class="hmenu-item">...</a>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/gp/browse.html?node=1375424031&amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15" class="hmenu-item">...</a> is not clickable at point (174, 640). Other element would receive the click: <ul class="hmenu hmenu-visible hmenu-translateX" data-menu-id="8" data-parent-menu-id="1">...</ul>
   (Session info: chrome=129.0.6668.101)
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [baa507b3a92a69d06ab93d8e942b7906, clickElement {id=f.08FA03C274E66B2D604B4E8AA7F77512.d.B4D2FE62878912E191A479535C3A3C87.e.48}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50318/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (baa507b3a92a69d06ab93d8e942b7906)] -> xpath: //a[text()='Laptops']]
-Session ID: baa507b3a92a69d06ab93d8e942b7906
+Command: [7163901a8c9b1a60fb1d9bb76c0ad78d, clickElement {id=f.EA1FBC3F7BF7D13DD88C6F76515F10B9.d.17E2C89762AB2389C675AB665D898E13.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57129}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57129/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7163901a8c9b1a60fb1d9bb76c0ad78d)] -> xpath: //a[text()='Laptops']]
+Session ID: 7163901a8c9b1a60fb1d9bb76c0ad78d
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -62,9 +62,9 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at com.tmb.pages.BasePage.click(BasePage.java:20)
-at com.tmb.pages.AmazonHamburgerMenuPage.clickSubMenuItem(AmazonHamburgerMenuPage.java:13)
-at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:17)
+at com.tmb.pages.BasePage.click(BasePage.java:26)
+at com.tmb.pages.AmazonHamburgerMenuPage.clickSubMenuItem(AmazonHamburgerMenuPage.java:16)
+at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -86,7 +86,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.AmazonDemoTest@610f7aa]" started-at="2024-10-17T19:03:35Z" name="tearDown" finished-at="2024-10-17T19:03:36Z" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.AmazonDemoTest@5609159b]" started-at="2024-10-18T18:13:16Z" name="tearDown" finished-at="2024-10-18T18:13:16Z" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

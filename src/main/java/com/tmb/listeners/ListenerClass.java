@@ -10,12 +10,17 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.xml.XmlTest;
 
+import com.annotations.FrameworkAnnotations;
 import com.tmb.reports.ExtentLogger;
 import com.tmb.reports.ExtentReport;
 public final  class ListenerClass  implements ISuiteListener,ITestListener{
 
 	public void onTestStart(ITestResult result) {
 		ExtentReport.createTest(result.getMethod().getDescription());
+		ExtentReport.addAuthors(result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotations.class)
+		.author());
+		ExtentReport.addCategories(result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotations.class)
+				.category());
 	}
 	public void onTestSuccess(ITestResult result) {
 		ExtentLogger.pass(result.getMethod().getMethodName() + " is passed");
