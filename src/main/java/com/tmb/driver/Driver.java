@@ -19,7 +19,7 @@ public class Driver {
 		
 	}
 
-	public static void initdriver(String browser) throws Exception
+	public static void initdriver(String browser)
 	{
 		if(Objects.isNull(DriverManager.getDriver())) {
 			if(browser.equalsIgnoreCase("chrome"))

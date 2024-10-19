@@ -8,9 +8,12 @@ import java.util.Objects;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.model.Category;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.tmb.constants.FrameworkConstants;
+import com.tmb.enums.CategoryType;
+import com.tmb.exceptions.InvalidPathException;
 
 public final class ExtentReport {
 	private static ExtentReports extent;
@@ -18,7 +21,7 @@ public final class ExtentReport {
 	{
 		
 	}
-	public static void initReports() throws Exception
+	public static void initReports()
 	{
 		if(Objects.isNull(extent))
 		{
@@ -40,9 +43,7 @@ public final class ExtentReport {
 		try {
 			Desktop.getDesktop().browse(new File(FrameworkConstants.getExtentReportFilePath()).toURI());
 		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (Exception e) {
-			e.printStackTrace();
+			throw new InvalidPathException("Cant find value of Extent Report file path");
 		}
 	}
 	public static void createTest(String testcaseName)
@@ -56,11 +57,11 @@ public final class ExtentReport {
 		ExtentManager.getExtent().assignAuthor(name);
 		}
 	}
-	public static void addCategories(String[] categories)
+	public static void addCategories(CategoryType[] categories)
 	{
-		for(String category : categories)
+		for(CategoryType category : categories)
 		{
-			ExtentManager.getExtent().assignCategory(category);
+			ExtentManager.getExtent().assignCategory(category.toString());
 		}
 	}
 }

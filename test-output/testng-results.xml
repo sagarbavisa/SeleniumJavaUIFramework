@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-18T18:13:05Z" name="Suite" finished-at="2024-10-18T18:13:16Z" duration-ms="11517">
+  <suite started-at="2024-10-19T06:56:56Z" name="Suite" finished-at="2024-10-19T06:57:09Z" duration-ms="12474">
     <groups>
     </groups>
-    <test started-at="2024-10-18T18:13:05Z" name="Test" finished-at="2024-10-18T18:13:16Z" duration-ms="11517">
+    <test started-at="2024-10-19T06:56:56Z" name="Test" finished-at="2024-10-19T06:57:09Z" duration-ms="12474">
       <class name="com.tmb.tests.AmazonDemoTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AmazonDemoTest@5609159b]" started-at="2024-10-18T18:13:06Z" name="setUp" finished-at="2024-10-18T18:13:13Z" duration-ms="6469" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AmazonDemoTest@76ed1b7c]" started-at="2024-10-19T06:56:57Z" name="setUp" finished-at="2024-10-19T06:57:05Z" duration-ms="7538" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@2116b68b]]>
+                <![CDATA[[Ljava.lang.Object;@1f387978]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="amazonTest(java.util.Map)[pri:0, instance:com.tmb.tests.AmazonDemoTest@5609159b]" started-at="2024-10-18T18:13:13Z" name="amazonTest" description="To check whether amazon  test is executed" finished-at="2024-10-18T18:13:16Z" duration-ms="2893" status="FAIL">
+        <test-method signature="amazonTest(java.util.Map)[pri:0, instance:com.tmb.tests.AmazonDemoTest@76ed1b7c]" started-at="2024-10-19T06:57:05Z" name="amazonTest" description="To check whether amazon  test is executed" finished-at="2024-10-19T06:57:08Z" duration-ms="2893" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -33,10 +33,10 @@
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7163901a8c9b1a60fb1d9bb76c0ad78d, clickElement {id=f.EA1FBC3F7BF7D13DD88C6F76515F10B9.d.17E2C89762AB2389C675AB665D898E13.e.90}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57129}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57129/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (7163901a8c9b1a60fb1d9bb76c0ad78d)] -> xpath: //a[text()='Laptops']]
-Session ID: 7163901a8c9b1a60fb1d9bb76c0ad78d]]>
+Command: [946737d6c84a8ffaf7b6aa14e30241c6, clickElement {id=f.B7E9ED725CDA0325D6A7D519DE0BFB4E.d.7B2401D4D38CA06A10EC8F1AC5C4694F.e.89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59050}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59050/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (946737d6c84a8ffaf7b6aa14e30241c6)] -> xpath: //a[text()='Laptops']]
+Session ID: 946737d6c84a8ffaf7b6aa14e30241c6]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/gp/browse.html?node=1375424031&amp;ref_=nav_em_sbc_mobcomp_laptops_0_2_8_15" class="hmenu-item">...</a> is not clickable at point (174, 640). Other element would receive the click: <ul class="hmenu hmenu-visible hmenu-translateX" data-menu-id="8" data-parent-menu-id="1">...</ul>
@@ -44,10 +44,10 @@ Session ID: 7163901a8c9b1a60fb1d9bb76c0ad78d]]>
 Build info: version: '4.24.0', revision: '748ffc9bc3'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7163901a8c9b1a60fb1d9bb76c0ad78d, clickElement {id=f.EA1FBC3F7BF7D13DD88C6F76515F10B9.d.17E2C89762AB2389C675AB665D898E13.e.90}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57129}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57129/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (7163901a8c9b1a60fb1d9bb76c0ad78d)] -> xpath: //a[text()='Laptops']]
-Session ID: 7163901a8c9b1a60fb1d9bb76c0ad78d
+Command: [946737d6c84a8ffaf7b6aa14e30241c6, clickElement {id=f.B7E9ED725CDA0325D6A7D519DE0BFB4E.d.7B2401D4D38CA06A10EC8F1AC5C4694F.e.89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\sbavisa\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59050}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59050/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (946737d6c84a8ffaf7b6aa14e30241c6)] -> xpath: //a[text()='Laptops']]
+Session ID: 946737d6c84a8ffaf7b6aa14e30241c6
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -64,7 +64,7 @@ at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 at com.tmb.pages.BasePage.click(BasePage.java:26)
 at com.tmb.pages.AmazonHamburgerMenuPage.clickSubMenuItem(AmazonHamburgerMenuPage.java:16)
-at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:20)
+at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -86,7 +86,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.AmazonDemoTest@5609159b]" started-at="2024-10-18T18:13:16Z" name="tearDown" finished-at="2024-10-18T18:13:16Z" duration-ms="299" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.AmazonDemoTest@76ed1b7c]" started-at="2024-10-19T06:57:08Z" name="tearDown" finished-at="2024-10-19T06:57:09Z" duration-ms="329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

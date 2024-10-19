@@ -2,6 +2,7 @@ package com.tmb.tests;
 
 import java.util.Map;
 
+import com.tmb.utils.EncoderUtils;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -34,7 +35,9 @@ public final class OrangeHRMTests extends BaseTest
 	{
 		
 		OrangeHRMLoginPage hrmLoginPage = new OrangeHRMLoginPage();
-		String loginpageTitle = hrmLoginPage.inputUsername(data.get("username")).inputPassword(data.get("password")).clickLoginBtn()
+		String loginpageTitle = hrmLoginPage.inputUsername(data.get("username"))
+				.inputPassword(EncoderUtils.getDecodedString(data.get("password")))
+				.clickLoginBtn()
 				.clickProfileLink().clickLogoutLink().getTitle();
 
 		Assertions.assertThat(loginpageTitle)

@@ -13,7 +13,10 @@ import com.tmb.driver.DriverManager;
 import com.tmb.enums.WaitStrategy;
 
 
-public class ExplicitWaitFactory {
+public final class ExplicitWaitFactory {
+	private ExplicitWaitFactory()
+	{
+	}
 		public static WebElement PerformExplicitWait(WaitStrategy waitStrategy,By by)
 	{
 			WebElement element = null;

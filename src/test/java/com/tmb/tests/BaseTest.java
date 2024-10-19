@@ -20,7 +20,7 @@ public class BaseTest
 	}
 	
 	@BeforeMethod
-	protected void setUp(Object[] data) throws Exception
+	protected void setUp(Object[] data)
 	{
 		@SuppressWarnings("unchecked")
 		Map<String,String> map = (Map<String,String>)data[0];

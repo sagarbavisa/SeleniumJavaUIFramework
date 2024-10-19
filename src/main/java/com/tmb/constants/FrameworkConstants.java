@@ -6,7 +6,7 @@ import com.tmb.enums.ConfigProperties;
 import com.tmb.utils.PropertyUtil;
 
 public final class FrameworkConstants {
-	private static final int EXPLICIT_TIME = 15;
+	private static final int EXPLICIT_TIME = 10;
 	private static final String RESOURCESPATH = System.getProperty("user.dir")+"/src/test/resources";
 	private static final String CONFIGFILEPATH = RESOURCESPATH+"/config/config.properties";
 	private static final String EXTENTREPORTFOLDERPATH = System.getProperty("user.dir")+"extent-test-output/";
@@ -27,7 +27,7 @@ public static String getConfigPropertyFilePath()
 {
 	return CONFIGFILEPATH;
 }
-public static String getExtentReportFilePath() throws Exception
+public static String getExtentReportFilePath()
 {
 	if(EXTENTREPORTFILEPATH.isEmpty())
 	{
@@ -35,8 +35,7 @@ public static String getExtentReportFilePath() throws Exception
 	}
 	return EXTENTREPORTFILEPATH;
 }
-private static String getExtentreportFolderPath() throws Exception {
-
+private static String getExtentreportFolderPath(){
 	if(PropertyUtil.getValue(ConfigProperties.OVERRIDEREPORTS).equalsIgnoreCase("no"))
 	{
 		return EXTENTREPORTFOLDERPATH+System.currentTimeMillis()+"/index.html";
