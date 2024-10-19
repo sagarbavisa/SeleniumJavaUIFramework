@@ -1,14 +1,13 @@
 package com.tmb.utils;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
+import com.tmb.exceptions.InvalidPathException;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -20,12 +19,12 @@ public final class ExcelUtils {
 	}
 	public static List<Map<String,String>> getTestDetails(String sheetname)
 	{
-		
+
 		List<Map<String,String>> list = null;
 
-		FileInputStream fs = null;
-		try {
-			fs = new FileInputStream(FrameworkConstants.getExcelpath());
+
+		try(FileInputStream fs = new FileInputStream(FrameworkConstants.getExcelpath()); ) {
+
 			XSSFWorkbook workbook = new XSSFWorkbook(fs);
 			XSSFSheet sheet = workbook.getSheet(sheetname);
 			int lastrownum = sheet.getLastRowNum();
@@ -44,22 +43,11 @@ public final class ExcelUtils {
 				list.add(map);
 				
 			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
 		}
 		catch (IOException e) {
-			e.printStackTrace();
+			throw new InvalidPathException("Excel file you are trying to read is not found",e);
 		}
 
-		finally {
-			try {
-				if(Objects.nonNull(fs))
-				{
-				fs.close();}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
 		return list;
 
 	}

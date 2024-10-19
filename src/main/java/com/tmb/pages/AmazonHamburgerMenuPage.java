@@ -12,7 +12,6 @@ public final class AmazonHamburgerMenuPage extends BasePage{
 private String linkSubMenu = "//a[text()='%s']";
 public AmazonLaptopPage clickSubMenuItem(String menuText)
 {
-
 	click(By.xpath(DynamicXPathUtils.getXpath(linkSubMenu,menuText)),WaitStrategy.VISIBLE,menuText);
 	if(menuText.equalsIgnoreCase("Laptops"))
 	{

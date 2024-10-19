@@ -26,7 +26,7 @@ public static void skip(String skipMsg)
 {
 	ExtentManager.getExtent().skip(skipMsg);
 }
-public static void pass(String passMsg,boolean isScreenshotNeeded) throws Exception
+public static void pass(String passMsg,boolean isScreenshotNeeded)
 {
 	if(PropertyUtil.getValue(ConfigProperties.PASSEDSTEPSSCREENSHOT).equalsIgnoreCase("yes") && 
 			isScreenshotNeeded)
@@ -37,7 +37,7 @@ public static void pass(String passMsg,boolean isScreenshotNeeded) throws Except
 		pass(passMsg);
 	}
 }
-public static void fail(String failMsg,boolean isScreenshotNeeded) throws Exception
+public static void fail(String failMsg,boolean isScreenshotNeeded)
 {
 	if(PropertyUtil.getValue(ConfigProperties.FAILEDSTEPSSCREENSHOT).equalsIgnoreCase("yes") && 
 			isScreenshotNeeded)
@@ -48,7 +48,7 @@ public static void fail(String failMsg,boolean isScreenshotNeeded) throws Except
 		fail(failMsg);
 	}
 }
-public static void skip(String skipMsg,boolean isScreenshotNeeded) throws Exception
+public static void skip(String skipMsg,boolean isScreenshotNeeded)
 {
 	if(PropertyUtil.getValue(ConfigProperties.SKIPPEDSTEPSSCREENSHOT).equalsIgnoreCase("yes") && 
 			isScreenshotNeeded)
